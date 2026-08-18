@@ -7,7 +7,7 @@ const Stats = () => {
     { label: 'GitHub Projects', value: '30+', icon: <Github size={24} />, color: 'text-emerald-400' },
     { label: 'Commits this Year', value: '1,200+', icon: <GitBranch size={24} />, color: 'text-cyan-400' },
     { label: 'Happy Clients', value: '50+', icon: <Users size={24} />, color: 'text-blue-400' },
-    { label: 'Years Experience', value: '4+', icon: <Trophy size={24} />, color: 'text-rose-400' },
+    { label: 'Years Experience', value: '2+', icon: <Trophy size={24} />, color: 'text-rose-400' },
   ];
 
   return (

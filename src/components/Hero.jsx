@@ -37,7 +37,7 @@ const Hero = () => {
             className="inline-flex items-center space-x-2 px-4 py-2 rounded-full glass border border-primary-500/30 mb-8"
           >
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-            <span className="text-sm font-semibold text-slate-200">Available for New Projects</span>
+            <span className="text-sm font-semibold text-slate-200">Available for New Projects • 2+ Years Experience</span>
           </motion.div>
 
           <motion.h1
@@ -101,10 +101,32 @@ const Hero = () => {
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-slate-400 opacity-50"
+        className="absolute bottom-20 left-1/2 -translate-x-1/2 text-slate-400 opacity-50 z-20"
       >
         <MousePointer2 size={32} />
       </motion.div>
+
+      {/* Infinite Scrolling Marquee */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden bg-dark-card/50 backdrop-blur-md border-y border-white/5 py-4 flex z-20">
+        <motion.div
+          animate={{ x: [0, -1035] }}
+          transition={{ repeat: Infinity, duration: 15, ease: "linear" }}
+          className="flex whitespace-nowrap text-primary-400/80 font-bold text-sm tracking-widest uppercase items-center"
+        >
+          {Array(4).fill("").map((_, i) => (
+            <span key={i} className="flex items-center">
+              <span className="mx-6">2+ YEARS OF EXPERIENCE</span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
+              <span className="mx-6">REACT & NEXT.JS DEVELOPER</span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
+              <span className="mx-6">FRONTEND ARCHITECT</span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
+              <span className="mx-6">MODERN UI/UX</span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
+            </span>
+          ))}
+        </motion.div>
+      </div>
     </section>
   );
 };
