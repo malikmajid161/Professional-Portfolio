@@ -25,11 +25,10 @@ const Services = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -8, boxShadow: '0 20px 40px -10px rgba(16, 185, 129, 0.1)' }}
-              className="glass-card p-8 group border-t-4 border-transparent hover:border-emerald-500"
+              viewport={{ once: true, margin: "-50px" }}
+              className="glass-card p-8 group border border-transparent hover:border-emerald-500/50"
             >
-              <div className="w-14 h-14 rounded-2xl bg-emerald-100 flex items-center justify-center mb-6 group-hover:bg-emerald-200 transition-colors">
+              <div className="w-14 h-14 rounded-2xl bg-emerald-400/20 flex items-center justify-center mb-6 group-hover:bg-emerald-400/30 transition-colors">
                 <service.icon className="text-emerald-600 group-hover:scale-110 transition-transform" size={32} />
               </div>
               <h3 className="text-xl font-bold text-white mb-4">{service.title}</h3>

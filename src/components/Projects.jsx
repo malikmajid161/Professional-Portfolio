@@ -60,8 +60,6 @@ const Projects = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
-                whileHover={{ y: -10, rotateX: 5, rotateY: -5, scale: 1.02 }}
-                style={{ transformPerspective: 1000 }}
                 className="glass-card overflow-hidden group"
               >
                 <div className="relative h-56 overflow-hidden">

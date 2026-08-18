@@ -22,7 +22,7 @@ const Navbar = () => {
     { name: 'Services', to: 'services' },
     { name: 'Skills', to: 'skills' },
     { name: 'Projects', to: 'projects' },
-    { name: 'Reviews', to: 'testimonials' },
+    { name: 'Experience', to: 'experience' },
     { name: 'Contact', to: 'contact' },
   ];
 

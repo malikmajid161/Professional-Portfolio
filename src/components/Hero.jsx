@@ -7,7 +7,7 @@ const Hero = () => {
   const techStack = ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind', 'GitHub'];
 
   return (
-    <section id="home" className="relative min-vh-100 flex items-center justify-center pt-32 pb-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video 
@@ -26,7 +26,7 @@ const Hero = () => {
       
       {/* Background Blobs */}
       <div className="absolute top-0 -left-20 w-96 h-96 bg-primary-400/20 rounded-full blur-[120px] animate-pulse"></div>
-      <div className="absolute bottom-0 -right-20 w-96 h-96 bg-purple-400/20 rounded-full blur-[120px] animate-pulse delay-700"></div>
+      <div className="absolute bottom-0 -right-20 w-96 h-96 bg-cyan-400/20 rounded-full blur-[120px] animate-pulse delay-700"></div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
