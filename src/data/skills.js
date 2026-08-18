@@ -21,13 +21,13 @@ export const skills = {
     { name: "Git & GitHub", level: 95 },
     { name: "VS Code", level: 98 },
     { name: "VPS Deployment", level: 85 },
-    { name: "Vercel / Netlify", level: 90 }
+    { name: "n8n (Automation)", level: 85 }
   ],
   other: [
     { name: "MATLAB", level: 80 },
-    { name: "PowerBI", level: 85 },
-    { name: "Tableau", level: 80 },
-    { name: "UI/UX Design", level: 85 },
-    { name: "AI Integration", level: 80 }
+    { name: "YOLOv11m / OpenCV", level: 90 },
+    { name: "PowerBI & Tableau", level: 80 },
+    { name: "Mobile App Development", level: 85 },
+    { name: "Web App Development", level: 95 }
   ]
 };

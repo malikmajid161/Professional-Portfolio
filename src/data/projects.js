@@ -9,9 +9,45 @@ export const projects = [
     github: "https://github.com/malikmajid161"
   },
   {
+    id: 14,
+    title: "Voter Search App",
+    description: "A fast, mobile-optimized search app for electoral data verification.",
+    image: "/projects/autapply.png",
+    tech: ["React", "JSON", "Tailwind"],
+    live: "https://github.com/malikmajid161",
+    github: "https://github.com/malikmajid161"
+  },
+  {
+    id: 15,
+    title: "Intrusion Detection System",
+    description: "An advanced deep learning system for detecting network intrusions.",
+    image: "/projects/weapon.png",
+    tech: ["Python", "TensorFlow", "React"],
+    live: "https://github.com/malikmajid161",
+    github: "https://github.com/malikmajid161"
+  },
+  {
+    id: 16,
+    title: "AI Personal Assistant (Jarvis)",
+    description: "A voice-activated intelligent assistant managing daily automated tasks.",
+    image: "/projects/interview.png",
+    tech: ["Python", "OpenAI API", "Speech Recognition"],
+    live: "https://github.com/malikmajid161",
+    github: "https://github.com/malikmajid161"
+  },
+  {
+    id: 17,
+    title: "AI Image Generator",
+    description: "A prompt-to-image AI tool generating stunning, high-fidelity graphics.",
+    image: "/projects/visionary.png",
+    tech: ["Python", "Stable Diffusion", "React"],
+    live: "https://github.com/malikmajid161",
+    github: "https://github.com/malikmajid161"
+  },
+  {
     id: 1,
     title: "AgriScan AI",
-    description: "An AI-powered app using YOLOv8m to instantly identify crop diseases.",
+    description: "An AI-powered app using YOLOv11m to instantly identify crop diseases.",
     image: "/projects/agriscan.png",
     tech: ["Python", "YOLOv8", "React"],
     live: "https://github.com/malikmajid161",
