@@ -32,8 +32,9 @@ const Navbar = () => {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-2xl font-bold tracking-tight cursor-pointer flex items-center"
+          className="text-2xl font-bold tracking-tight cursor-pointer flex items-center group"
         >
+          <img src="/logo.png" alt="M Logo" className="h-10 w-10 mr-3 rounded-xl shadow-lg group-hover:scale-105 transition-transform" />
           <span className="text-white">Muhammad </span>
           <span className="text-primary-400 ml-1">Majid Ali</span>
         </motion.div>

@@ -6,11 +6,14 @@ import { GithubIcon } from './Icons';
 
 const Projects = () => {
   const [filter, setFilter] = useState('All');
-  const categories = ['All', 'React', 'Node.js', 'Tailwind', 'Firebase'];
+  const [showAll, setShowAll] = useState(false);
+  const categories = ['All', 'React', 'Node.js', 'Python', 'Tailwind'];
 
   const filteredProjects = filter === 'All' 
     ? projects 
     : projects.filter(p => p.tech.some(t => t.includes(filter)) || p.tech.includes(filter));
+
+  const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 6);
 
   return (
     <section id="projects" className="section-padding relative">
@@ -31,7 +34,7 @@ const Projects = () => {
             {categories.map((cat) => (
               <button
                 key={cat}
-                onClick={() => setFilter(cat)}
+                onClick={() => { setFilter(cat); setShowAll(false); }}
                 className={`px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 ${
                   filter === cat 
                     ? 'bg-primary-600 text-white shadow-[0_0_15px_rgba(79,70,229,0.5)] scale-105' 
@@ -48,8 +51,8 @@ const Projects = () => {
           layout
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          <AnimatePresence>
-            {filteredProjects.map((project) => (
+          <AnimatePresence mode="popLayout">
+            {displayedProjects.map((project) => (
               <motion.div
                 key={project.id}
                 layout
@@ -57,7 +60,8 @@ const Projects = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
-                whileHover={{ y: -10 }}
+                whileHover={{ y: -10, rotateX: 5, rotateY: -5, scale: 1.02 }}
+                style={{ transformPerspective: 1000 }}
                 className="glass-card overflow-hidden group"
               >
                 <div className="relative h-56 overflow-hidden">
@@ -102,6 +106,22 @@ const Projects = () => {
             ))}
           </AnimatePresence>
         </motion.div>
+
+        {!showAll && filteredProjects.length > 6 && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="flex justify-center mt-12"
+          >
+            <button 
+              onClick={() => setShowAll(true)}
+              className="btn-outline flex items-center space-x-2"
+            >
+              <span>View All Projects</span>
+              <ExternalLink size={16} />
+            </button>
+          </motion.div>
+        )}
       </div>
     </section>
   );
