@@ -69,9 +69,11 @@ const Projects = () => {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="p-3 bg-primary-600 text-white rounded-full hover:bg-primary-500 transition-all hover:scale-110 shadow-[0_0_15px_rgba(79,70,229,0.5)]">
-                      <ExternalLink size={20} />
-                    </a>
+                    {project.live && project.live !== project.github && project.live !== "https://github.com/malikmajid161" && (
+                      <a href={project.live} target="_blank" rel="noopener noreferrer" className="p-3 bg-primary-600 text-white rounded-full hover:bg-primary-500 transition-all hover:scale-110 shadow-[0_0_15px_rgba(79,70,229,0.5)]">
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-3 bg-dark-card/20 text-white rounded-full hover:bg-dark-card/30 transition-colors backdrop-blur-md">
                       <GithubIcon size={20} />
                     </a>
@@ -90,10 +92,12 @@ const Projects = () => {
                     {project.description}
                   </p>
                   <div className="flex items-center justify-between mt-auto">
-                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-primary-400 font-bold text-sm hover:text-primary-300 flex items-center space-x-1 transition-colors">
-                      <span>Live Demo</span>
-                      <ExternalLink size={14} />
-                    </a>
+                    {project.live && project.live !== project.github && project.live !== "https://github.com/malikmajid161" && (
+                      <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-primary-400 font-bold text-sm hover:text-primary-300 flex items-center space-x-1 transition-colors">
+                        <span>Live Demo</span>
+                        <ExternalLink size={14} />
+                      </a>
+                    )}
                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-slate-400 font-semibold text-sm hover:text-white flex items-center space-x-1 transition-colors">
                       <span>Code</span>
                       <GithubIcon size={14} />

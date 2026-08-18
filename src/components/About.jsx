@@ -42,10 +42,10 @@ const About = () => {
           >
             <h2 className="text-4xl font-bold mb-6 text-white">About Me</h2>
             <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-              I am a dedicated Web Developer and Freelancer with a passion for building high-quality websites. I specialize in creating clean, responsive, and user-friendly web solutions for businesses, startups, and individuals.
+              I am a dedicated AI Engineer and Web Developer with a passion for building high-quality, fully deployed digital solutions. I specialize in creating clean, responsive, and intelligent web applications for businesses, startups, and individuals.
             </p>
             <p className="text-lg text-slate-300 mb-10 leading-relaxed">
-              Working on platforms like <span className="text-violet-600 font-semibold">Fiverr</span> and <span className="text-violet-600 font-semibold">Upwork</span>, I have helped clients globally transform their ideas into functional digital realities. My focus is always on performance, scalability, and exceptional user experience.
+              My focus is on integrating advanced AI models into robust web frontends, ensuring performance, scalability, and exceptional user experiences. All my major projects are real-world ready and fully functional.
             </p>
 
             <div className="grid grid-cols-2 gap-6">
