@@ -73,7 +73,7 @@ const Hero = () => {
             <Link to="projects" smooth={true} duration={500} offset={-80}>
               <button className="btn-outline">View Projects</button>
             </Link>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-outline border-cyan-500/50 hover:bg-cyan-500/10 text-cyan-400">
+            <a href="/resume.pdf" download="MuhammadMajidAli_Resume.pdf" className="btn-outline border-cyan-500/50 hover:bg-cyan-500/10 text-cyan-400">
               Download Resume
             </a>
             <div className="flex space-x-4">
