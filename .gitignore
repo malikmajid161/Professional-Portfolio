@@ -27,6 +27,7 @@ dist-ssr
 Downloads/
 *.png
 !public/profile.png
+!public/favicon.png
 !public/projects/*.png
 !src/assets/*.png
 image.png
