@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GithubIcon as Github, GitBranch, Star, Code2, Users, Trophy } from 'lucide-react';
+import { GitBranch, Star, Code2, Users, Trophy } from 'lucide-react';
+import { GithubIcon as Github } from './Icons';
 
 const Stats = () => {
   const stats = [
