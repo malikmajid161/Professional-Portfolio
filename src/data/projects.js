@@ -1,5 +1,14 @@
 export const projects = [
   {
+    id: 13,
+    title: "3D J-10C Fighter Model",
+    description: "A highly detailed, rendering and interactive 3D model of the J-10C fighter jet. Showcasing advanced 3D web rendering capabilities and aerospace modeling skills.",
+    image: "https://picsum.photos/seed/j10c/800/600",
+    tech: ["Three.js", "React", "WebGL"],
+    live: "https://github.com/malikmajid161",
+    github: "https://github.com/malikmajid161"
+  },
+  {
     id: 1,
     title: "AgriScan AI",
     description: "AI-powered application for identifying crop diseases using YOLOv8m. Features a robust Gatekeeper for filtering non-plant images and multi-agent routing for high accuracy.",

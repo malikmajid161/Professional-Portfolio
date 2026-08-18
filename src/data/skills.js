@@ -8,7 +8,9 @@ export const skills = {
   ],
   backend: [
     { name: "Node.js", level: 75 },
-    { name: "Express.js", level: 80 }
+    { name: "Express.js", level: 80 },
+    { name: "LangChain", level: 85 },
+    { name: "LangGraph", level: 80 }
   ],
   database: [
     { name: "Firebase", level: 85 },
@@ -16,15 +18,16 @@ export const skills = {
     { name: "MongoDB", level: 70 }
   ],
   tools: [
-    { name: "Git", level: 90 },
-    { name: "GitHub", level: 95 },
+    { name: "Git & GitHub", level: 95 },
     { name: "VS Code", level: 98 },
-    { name: "Vercel", level: 90 },
-    { name: "Netlify", level: 85 }
+    { name: "VPS Deployment", level: 85 },
+    { name: "Vercel / Netlify", level: 90 }
   ],
   other: [
-    { name: "UI/UX Design", level: 85 },
     { name: "MATLAB", level: 80 },
-    { name: "AI Website Integration", level: 80 }
+    { name: "PowerBI", level: 85 },
+    { name: "Tableau", level: 80 },
+    { name: "UI/UX Design", level: 85 },
+    { name: "AI Integration", level: 80 }
   ]
 };
