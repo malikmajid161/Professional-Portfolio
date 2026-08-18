@@ -34,17 +34,17 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center space-x-2 px-4 py-2 rounded-full glass border border-slate-200/60 mb-8"
+            className="inline-flex items-center space-x-2 px-4 py-2 rounded-full glass border border-primary-500/30 mb-8"
           >
-            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-            <span className="text-sm font-semibold text-slate-600">Available for New Projects</span>
+            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+            <span className="text-sm font-semibold text-slate-200">Available for New Projects</span>
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-extrabold leading-tight mb-8 text-slate-900"
+            className="text-5xl md:text-7xl font-extrabold leading-tight mb-8 text-white drop-shadow-lg"
           >
             I Build <span className="text-gradient">Modern Websites</span> That Help Businesses Grow
           </motion.h1>
@@ -53,9 +53,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-lg md:text-xl text-slate-500 mb-12 leading-relaxed max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-slate-300 mb-12 leading-relaxed max-w-2xl mx-auto"
           >
-            I am <span className="text-slate-900 font-bold">Muhammad Majid Ali</span>, a professional web developer and freelancer helping clients build responsive, fast, and beautiful websites.
+            I am <span className="text-white font-bold">Muhammad Majid Ali</span>, a professional web developer and freelancer helping clients build responsive, fast, and beautiful websites.
           </motion.p>
 
           <motion.div
@@ -74,10 +74,10 @@ const Hero = () => {
               <button className="btn-outline">View Projects</button>
             </Link>
             <div className="flex space-x-4">
-              <a href="https://github.com/malikmajid161" target="_blank" rel="noopener noreferrer" className="p-3 glass-card text-slate-600 hover:text-slate-900">
+              <a href="https://github.com/malikmajid161" target="_blank" rel="noopener noreferrer" className="p-3 glass-card text-slate-300 hover:text-white hover:bg-dark-card/10 transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://www.linkedin.com/in/muhammadmajidali" target="_blank" rel="noopener noreferrer" className="p-3 glass-card text-slate-600 hover:text-slate-900">
+              <a href="https://www.linkedin.com/in/muhammadmajidali" target="_blank" rel="noopener noreferrer" className="p-3 glass-card text-slate-300 hover:text-white hover:bg-dark-card/10 transition-colors">
                 <Linkedin size={24} />
               </a>
             </div>
@@ -90,7 +90,7 @@ const Hero = () => {
             className="flex flex-wrap justify-center gap-3"
           >
             {techStack.map((tech) => (
-              <span key={tech} className="px-4 py-2 rounded-xl glass border border-slate-200/60 text-sm font-semibold text-slate-500">
+              <span key={tech} className="px-4 py-2 rounded-xl glass border border-slate-700/60 text-sm font-semibold text-slate-300 hover:text-white transition-colors cursor-default">
                 {tech}
               </span>
             ))}

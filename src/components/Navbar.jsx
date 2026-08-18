@@ -27,15 +27,15 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'py-4 glass border-b border-slate-200/60' : 'py-6 bg-transparent'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'py-4 glass border-b border-white/10' : 'py-6 bg-transparent'}`}>
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-2xl font-bold tracking-tight cursor-pointer"
+          className="text-2xl font-bold tracking-tight cursor-pointer flex items-center"
         >
-          <span className="text-slate-900">Muhammad </span>
-          <span className="text-primary-600">Majid Ali</span>
+          <span className="text-white">Muhammad </span>
+          <span className="text-primary-400 ml-1">Majid Ali</span>
         </motion.div>
 
         {/* Desktop Menu */}
@@ -49,7 +49,7 @@ const Navbar = () => {
                   smooth={true}
                   offset={-80}
                   duration={500}
-                  className="text-slate-500 hover:text-primary-600 cursor-pointer transition-colors font-semibold text-sm uppercase tracking-wider"
+                  className="text-slate-300 hover:text-white cursor-pointer transition-colors font-semibold text-sm uppercase tracking-wider"
                 >
                   {link.name}
                 </Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
         <div className="lg:hidden">
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 text-slate-900"
+            className="p-2 text-white"
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -97,7 +97,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden glass border-t border-slate-200/60 overflow-hidden"
+            className="lg:hidden glass border-t border-white/10 overflow-hidden"
           >
             <div className="container mx-auto px-6 py-8">
               <ul className="flex flex-col space-y-6">
@@ -110,14 +110,14 @@ const Navbar = () => {
                       offset={-80}
                       duration={500}
                       onClick={() => setIsOpen(false)}
-                      className="text-slate-500 hover:text-primary-400 text-lg font-medium block"
+                      className="text-slate-300 hover:text-primary-400 text-lg font-medium block"
                     >
                       {link.name}
                     </Link>
                   </li>
                 ))}
               </ul>
-              <div className="mt-8 pt-8 border-t border-slate-200/60 flex flex-col space-y-4">
+              <div className="mt-8 pt-8 border-t border-white/10 flex flex-col space-y-4">
                 <Link
                   to="contact"
                   spy={true}

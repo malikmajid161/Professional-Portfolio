@@ -20,7 +20,7 @@ const About = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative z-10 rounded-3xl overflow-hidden glass border border-slate-200/60 p-2">
+            <div className="relative z-10 rounded-3xl overflow-hidden glass border border-white/10 p-2">
               <img 
                 src="/profile.png" 
                 alt="Muhammad Majid Ali"
@@ -28,9 +28,9 @@ const About = () => {
               />
             </div>
             {/* Experience Badge */}
-            <div className="absolute -bottom-6 -right-6 glass p-6 rounded-2xl border border-slate-200/60 z-20 shadow-2xl">
+            <div className="absolute -bottom-6 -right-6 glass p-6 rounded-2xl border border-white/10 z-20 shadow-2xl">
               <span className="block text-3xl font-bold text-violet-600">2+</span>
-              <span className="text-slate-600 text-sm font-medium">Years of Experience</span>
+              <span className="text-slate-300 text-sm font-medium">Years of Experience</span>
             </div>
           </motion.div>
 
@@ -40,11 +40,11 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold mb-6 text-slate-900">About Me</h2>
-            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+            <h2 className="text-4xl font-bold mb-6 text-white">About Me</h2>
+            <p className="text-lg text-slate-300 mb-8 leading-relaxed">
               I am a dedicated Web Developer and Freelancer with a passion for building high-quality websites. I specialize in creating clean, responsive, and user-friendly web solutions for businesses, startups, and individuals.
             </p>
-            <p className="text-lg text-slate-600 mb-10 leading-relaxed">
+            <p className="text-lg text-slate-300 mb-10 leading-relaxed">
               Working on platforms like <span className="text-violet-600 font-semibold">Fiverr</span> and <span className="text-violet-600 font-semibold">Upwork</span>, I have helped clients globally transform their ideas into functional digital realities. My focus is always on performance, scalability, and exceptional user experience.
             </p>
 
@@ -59,7 +59,7 @@ const About = () => {
                   className="glass-card p-6 border-b-4 border-transparent hover:border-violet-500"
                 >
                   <stat.icon className="text-violet-600 mb-4" size={28} />
-                  <h4 className="text-2xl font-bold text-slate-900 mb-1">{stat.value}</h4>
+                  <h4 className="text-2xl font-bold text-white mb-1">{stat.value}</h4>
                   <p className="text-sm text-slate-400">{stat.label}</p>
                 </motion.div>
               ))}

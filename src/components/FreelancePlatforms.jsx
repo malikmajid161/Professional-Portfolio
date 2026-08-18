@@ -53,24 +53,24 @@ const FreelancePlatforms = () => {
               className={`glass-card p-10 flex flex-col items-center text-center group`}
             >
               <div className={`w-20 h-20 rounded-3xl ${platform.color} flex items-center justify-center mb-8 shadow-2xl ${platform.shadow} group-hover:scale-110 transition-transform duration-300`}>
-                <span className="text-3xl font-bold text-slate-900 italic">{platform.name[0]}</span>
+                <span className="text-3xl font-bold text-white italic">{platform.name[0]}</span>
               </div>
-              <h3 className="text-3xl font-bold text-slate-900 mb-4">{platform.name} Profile</h3>
+              <h3 className="text-3xl font-bold text-white mb-4">{platform.name} Profile</h3>
               <div className="flex items-center space-x-2 mb-6">
                 <div className="flex text-yellow-500">
                   {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
                 </div>
-                <span className="text-slate-900 font-bold">{platform.rating}</span>
+                <span className="text-white font-bold">{platform.rating}</span>
                 <span className="text-slate-400 text-sm">({platform.reviews} reviews)</span>
               </div>
-              <p className="text-slate-600 mb-10 leading-relaxed">
+              <p className="text-slate-300 mb-10 leading-relaxed">
                 {platform.description}
               </p>
               <a 
                 href={platform.link} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className={`w-full py-4 rounded-2xl font-bold text-slate-900 transition-all duration-300 flex items-center justify-center space-x-2 ${platform.color} hover:brightness-110 active:scale-95`}
+                className={`w-full py-4 rounded-2xl font-bold text-white transition-all duration-300 flex items-center justify-center space-x-2 ${platform.color} hover:brightness-110 active:scale-95`}
               >
                 <span>Visit {platform.name}</span>
                 <ExternalLink size={20} />

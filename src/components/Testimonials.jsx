@@ -30,7 +30,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="section-padding bg-slate-50/50">
+    <section id="testimonials" className="section-padding bg-transparent">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -56,13 +56,13 @@ const Testimonials = () => {
               className="glass-card p-10 relative"
             >
               <div className="absolute -top-5 right-10 w-12 h-12 rounded-full bg-primary-600 flex items-center justify-center shadow-lg shadow-primary-600/30">
-                <Quote className="text-slate-900" size={20} />
+                <Quote className="text-white" size={20} />
               </div>
 
               <div className="flex items-center space-x-4 mb-8">
                 <img src={review.image} alt={review.name} className="w-16 h-16 rounded-full border-2 border-primary-500/30" />
                 <div>
-                  <h4 className="text-xl font-bold text-slate-900">{review.name}</h4>
+                  <h4 className="text-xl font-bold text-white">{review.name}</h4>
                   <p className="text-sm text-slate-400">{review.role}</p>
                 </div>
               </div>
@@ -71,11 +71,11 @@ const Testimonials = () => {
                 {[...Array(review.rating)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
               </div>
 
-              <p className="text-slate-500 italic leading-relaxed mb-8">
+              <p className="text-slate-300 italic leading-relaxed mb-8">
                 "{review.content}"
               </p>
 
-              <div className="pt-6 border-t border-slate-200/50">
+              <div className="pt-6 border-t border-white/10/50">
                 <span className="text-xs font-bold uppercase tracking-widest text-primary-500">
                   Client from {review.platform}
                 </span>

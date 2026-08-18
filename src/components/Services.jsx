@@ -3,7 +3,7 @@ import { services } from '../data/services';
 
 const Services = () => {
   return (
-    <section id="services" className="section-padding bg-slate-50/50">
+    <section id="services" className="section-padding bg-transparent">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -32,8 +32,8 @@ const Services = () => {
               <div className="w-14 h-14 rounded-2xl bg-emerald-100 flex items-center justify-center mb-6 group-hover:bg-emerald-200 transition-colors">
                 <service.icon className="text-emerald-600 group-hover:scale-110 transition-transform" size={32} />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-4">{service.title}</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-white mb-4">{service.title}</h3>
+              <p className="text-slate-300 leading-relaxed">
                 {service.description}
               </p>
             </motion.div>

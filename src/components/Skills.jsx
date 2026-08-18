@@ -35,17 +35,17 @@ const Skills = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-bold text-slate-900 mb-8 border-l-4 border-amber-500 pl-4">
+              <h3 className="text-2xl font-bold text-white mb-8 border-l-4 border-amber-500 pl-4">
                 {cat.title}
               </h3>
               <div className="space-y-6">
                 {skills[cat.key].map((skill) => (
                   <div key={skill.name}>
                     <div className="flex justify-between mb-2">
-                      <span className="text-slate-500 font-semibold">{skill.name}</span>
+                      <span className="text-slate-300 font-semibold">{skill.name}</span>
                       <span className="text-amber-600 font-bold">{skill.level}%</span>
                     </div>
-                    <div className="h-2 w-full bg-white/5 rounded-full overflow-hidden">
+                    <div className="h-2 w-full bg-dark-card/5 rounded-full overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}

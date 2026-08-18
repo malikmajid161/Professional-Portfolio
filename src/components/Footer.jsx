@@ -10,32 +10,32 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-slate-50 border-t border-slate-200/50 pt-20 pb-10 relative overflow-hidden">
+    <footer className="bg-transparent border-t border-white/10/50 pt-20 pb-10 relative overflow-hidden">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold mb-6">
-              <span className="text-slate-900">Muhammad </span>
+              <span className="text-white">Muhammad </span>
               <span className="text-primary-500">Majid Ali</span>
             </h3>
             <p className="text-slate-400 mb-8 leading-relaxed">
               Crafting modern digital experiences that help businesses and individuals stand out in the digital world.
             </p>
             <div className="flex space-x-4">
-              <a href="https://github.com/malikmajid161" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg glass flex items-center justify-center text-slate-600 hover:text-slate-900 transition-colors">
+              <a href="https://github.com/malikmajid161" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg glass flex items-center justify-center text-slate-300 hover:text-white transition-colors">
                 <Github size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/muhammadmajidali" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg glass flex items-center justify-center text-slate-600 hover:text-slate-900 transition-colors">
+              <a href="https://www.linkedin.com/in/muhammadmajidali" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg glass flex items-center justify-center text-slate-300 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:malikmajid5140@gmail.com" className="w-10 h-10 rounded-lg glass flex items-center justify-center text-slate-600 hover:text-slate-900 transition-colors">
+              <a href="mailto:malikmajid5140@gmail.com" className="w-10 h-10 rounded-lg glass flex items-center justify-center text-slate-300 hover:text-white transition-colors">
                 <Mail size={20} />
               </a>
             </div>
           </div>
 
           <div>
-            <h4 className="text-slate-900 font-bold mb-6">Quick Links</h4>
+            <h4 className="text-white font-bold mb-6">Quick Links</h4>
             <ul className="space-y-4">
               {['Home', 'About', 'Services', 'Skills', 'Projects'].map((item) => (
                 <li key={item}>
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-slate-900 font-bold mb-6">Services</h4>
+            <h4 className="text-white font-bold mb-6">Services</h4>
             <ul className="space-y-4">
               {[
                 'Portfolio Design',
@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-slate-900 font-bold mb-6">Let's Connect</h4>
+            <h4 className="text-white font-bold mb-6">Let's Connect</h4>
             <p className="text-slate-400 mb-6">
               Interested in working together? Reach out to me for a free consultation.
             </p>
@@ -83,11 +83,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-slate-200/50 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+        <div className="pt-8 border-t border-white/10/50 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
           <p>© {currentYear} Muhammad Majid Ali. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-slate-900 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-slate-900 transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@ const Footer = () => {
       {/* Back to top button */}
       <button 
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 w-12 h-12 bg-primary-600 text-slate-900 rounded-full flex items-center justify-center shadow-lg shadow-primary-600/30 hover:bg-primary-500 transition-all duration-300 z-50 group"
+        className="fixed bottom-8 right-8 w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center shadow-lg shadow-primary-600/30 hover:bg-primary-500 transition-all duration-300 z-50 group"
       >
         <ArrowUp size={24} className="group-hover:-translate-y-1 transition-transform" />
       </button>
