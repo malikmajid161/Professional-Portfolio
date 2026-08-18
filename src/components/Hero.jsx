@@ -55,7 +55,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-lg md:text-xl text-slate-300 mb-12 leading-relaxed max-w-2xl mx-auto"
           >
-            I am <span className="text-white font-bold">Muhammad Majid Ali</span>, a professional web developer and freelancer helping clients build responsive, fast, and beautiful websites.
+            I am <span className="text-white font-bold">Muhammad Majid Ali</span>, a professional AI Engineer, Web Developer, and Freelancer helping clients build responsive, fast, and beautiful websites.
           </motion.p>
 
           <motion.div
