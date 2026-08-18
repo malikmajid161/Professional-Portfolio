@@ -58,7 +58,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-white mb-1">Location</h4>
-                  <p className="text-slate-300">Lahore, Pakistan</p>
+                  <p className="text-slate-300">Wah Rawalpindi, Pakistan</p>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ const Contact = () => {
                   <label className="text-sm font-medium text-slate-300">Your Name</label>
                   <input 
                     type="text" 
-                    placeholder="John Doe" 
+                    placeholder="Your Full Name" 
                     className="w-full bg-dark-card/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary-500 transition-colors"
                   />
                 </div>
@@ -96,7 +96,7 @@ const Contact = () => {
                   <label className="text-sm font-medium text-slate-300">Your Email</label>
                   <input 
                     type="email" 
-                    placeholder="john@example.com" 
+                    placeholder="youremail@example.com" 
                     className="w-full bg-dark-card/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary-500 transition-colors"
                   />
                 </div>

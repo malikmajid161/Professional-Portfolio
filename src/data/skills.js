@@ -24,7 +24,7 @@ export const skills = {
   ],
   other: [
     { name: "UI/UX Design", level: 85 },
-    { name: "SEO Basics", level: 75 },
+    { name: "MATLAB", level: 80 },
     { name: "AI Website Integration", level: 80 }
   ]
 };

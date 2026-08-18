@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
 import { GithubIcon as Github } from './Icons';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,7 @@ const Navbar = () => {
           animate={{ opacity: 1, x: 0 }}
           className="text-2xl font-bold tracking-tight cursor-pointer flex items-center group"
         >
-          <img src="/logo.png" alt="M Logo" className="h-10 w-10 mr-3 rounded-xl shadow-lg group-hover:scale-105 transition-transform" />
+          <img src={logo} alt="M Logo" className="h-10 w-10 mr-3 rounded-xl shadow-lg group-hover:scale-105 transition-transform" />
           <span className="text-white">Muhammad </span>
           <span className="text-primary-400 ml-1">Majid Ali</span>
         </motion.div>
