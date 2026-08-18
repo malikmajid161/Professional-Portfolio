@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 13,
     title: "3D J-10C Fighter Model",
-    description: "A highly detailed, rendering and interactive 3D model of the J-10C fighter jet. Showcasing advanced 3D web rendering capabilities and aerospace modeling skills.",
+    description: "A highly detailed, interactive 3D rendering of the J-10C fighter jet.",
     image: "https://picsum.photos/seed/j10c/800/600",
     tech: ["Three.js", "React", "WebGL"],
     live: "https://github.com/malikmajid161",
@@ -11,7 +11,7 @@ export const projects = [
   {
     id: 1,
     title: "AgriScan AI",
-    description: "AI-powered application for identifying crop diseases using YOLOv8m. Features a robust Gatekeeper for filtering non-plant images and multi-agent routing for high accuracy.",
+    description: "An AI-powered app using YOLOv8m to instantly identify crop diseases.",
     image: "/projects/agriscan.png",
     tech: ["Python", "YOLOv8", "React"],
     live: "https://github.com/malikmajid161",
@@ -20,7 +20,7 @@ export const projects = [
   {
     id: 2,
     title: "FinTrack",
-    description: "A comprehensive personal finance tracking application designed to help users manage their expenses, track budgets, and visualize their financial health.",
+    description: "A sleek personal finance dashboard to track budgets and expenses.",
     image: "/projects/fintrack.png",
     tech: ["React", "Node.js", "MongoDB"],
     live: "https://github.com/malikmajid161",
@@ -29,7 +29,7 @@ export const projects = [
   {
     id: 3,
     title: "Medic",
-    description: "A healthcare management system that bridges the gap between patients and doctors, allowing seamless appointment scheduling and medical record tracking.",
+    description: "A hospital management platform for seamless doctor-patient scheduling.",
     image: "/projects/medic.png",
     tech: ["React", "Express", "Tailwind"],
     live: "https://github.com/malikmajid161/medic",
@@ -38,7 +38,7 @@ export const projects = [
   {
     id: 4,
     title: "Interview Prep AI",
-    description: "An intelligent platform that uses AI to conduct mock interviews, providing real-time feedback on answers, tone, and confidence.",
+    description: "An intelligent mock-interview platform with real-time AI feedback.",
     image: "/projects/interview.png",
     tech: ["OpenAI", "React", "Node.js"],
     live: "https://github.com/malikmajid161/Interview-prepration-Ai",
@@ -47,7 +47,7 @@ export const projects = [
   {
     id: 5,
     title: "Visionary AI Detector",
-    description: "Advanced AI image analysis tool that detects deepfakes, AI-generated images, and manipulated visual content with high accuracy.",
+    description: "An advanced neural network tool detecting deepfakes and manipulated images.",
     image: "/projects/visionary.png",
     tech: ["Python", "TensorFlow", "React"],
     live: "https://github.com/malikmajid161/Visionary-AI-Detector",
@@ -56,7 +56,7 @@ export const projects = [
   {
     id: 6,
     title: "Weapon Detection System",
-    description: "A real-time security system leveraging deep learning to identify and alert authorities about visible weapons in CCTV footage.",
+    description: "A real-time deep learning security system for CCTV weapon detection.",
     image: "/projects/weapon.png",
     tech: ["YOLO", "OpenCV", "Python"],
     live: "https://github.com/malikmajid161/Weapon-Detection",
@@ -65,7 +65,7 @@ export const projects = [
   {
     id: 7,
     title: "Music Generation AI",
-    description: "An AI-powered tool that generates original music tracks, melodies, and beats based on user-provided genres, moods, and styles.",
+    description: "An AI tool that generates original music based on mood and genre.",
     image: "/projects/music.png",
     tech: ["Python", "PyTorch", "React"],
     live: "https://github.com/malikmajid161/MusicGenerationAI",
@@ -74,7 +74,7 @@ export const projects = [
   {
     id: 8,
     title: "Language Translation Tool",
-    description: "A fast and highly accurate neural machine translation tool that supports over 50 languages with context-aware translations.",
+    description: "A fast, context-aware neural machine translation tool for 50+ languages.",
     image: "/projects/language.png",
     tech: ["NLP", "Python", "React"],
     live: "https://github.com/malikmajid161/LanguageTranslationTool",
@@ -83,7 +83,7 @@ export const projects = [
   {
     id: 9,
     title: "Bazm-e-Adab",
-    description: "A beautiful, interactive platform dedicated to Urdu literature, poetry, and prose, connecting writers and literature enthusiasts.",
+    description: "An elegant interactive platform dedicated to Urdu literature and poetry.",
     image: "/projects/bazm.png",
     tech: ["React", "Tailwind CSS", "Firebase"],
     live: "https://github.com/malikmajid161/Bazm-e-Adab",
@@ -92,7 +92,7 @@ export const projects = [
   {
     id: 10,
     title: "Autapply Job",
-    description: "An automation script and web portal designed to streamline the job application process by automatically filling out standard forms.",
+    description: "A powerful web automation script for streamlining job applications.",
     image: "/projects/autapply.png",
     tech: ["Selenium", "Python", "React"],
     live: "https://github.com/malikmajid161/Autapply-Job",
@@ -101,7 +101,7 @@ export const projects = [
   {
     id: 11,
     title: "StyleSphere",
-    description: "A modern, high-end e-commerce frontend tailored for luxury fashion brands, featuring stunning animations and 3D product views.",
+    description: "A modern, high-end e-commerce frontend tailored for luxury fashion.",
     image: "/projects/stylesphere.png",
     tech: ["Next.js", "Tailwind", "Framer"],
     live: "https://github.com/malikmajid161/StyleSphere",
@@ -110,7 +110,7 @@ export const projects = [
   {
     id: 12,
     title: "Meme Generator",
-    description: "A fun and interactive web app that lets users easily create, customize, and share memes using trending templates and text tools.",
+    description: "A highly interactive web app for creating and customizing memes.",
     image: "/projects/meme.png",
     tech: ["React", "Canvas API", "CSS"],
     live: "https://github.com/malikmajid161/meme-generator",

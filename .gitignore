@@ -26,6 +26,7 @@ dist-ssr
 # Project specific
 Downloads/
 *.png
+*.pdf
 !public/profile.png
 !public/favicon.png
 !public/projects/*.png
